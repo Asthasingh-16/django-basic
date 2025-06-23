@@ -1,0 +1,164 @@
+{% extends "base.html" %} {% block title %} Home {% endblock title %} 
+{% block body %}
+<div class="container-fluid my-0">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="/static/3a.jpg"
+          class="d-block w-100"
+          style="height: 500px; object-fit: cover;"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/static/4a.jpg"
+          class="d-block w-100"
+          style="height: 500px; object-fit: cover;"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/static/5.jpg"
+          class="d-block w-100"
+          style="height: 500px; object-fit: cover;"
+          alt="Delicious Food"
+        />
+      </div>
+      <div class="carousel-caption d-none d-md-block text-dark">
+        <h5>Welcome to Rosemary Cakes</h5>
+        <p>Serving sweetness with every bite</p>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExample"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExample"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h1 class="my-5 text-center">Select from our range of cakes</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/choco_truffle.jpg" class="d-block w-100" alt="Chocolate Truffle" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Our signature chocolate truffle — rich, moist, and irresistible.
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/red_velvet.jpg" class="d-block w-100" alt="Red Velvet" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Classic red velvet with cream cheese frosting — smooth & velvety.
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/strawberry.jpg" class="d-block w-100" alt="Strawberry Cream" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Strawberry cream cake topped with fresh berries and soft sponge.
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/mocha.jpg" class="d-block w-100" alt="Mocha Cake" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Coffee-infused sponge with mocha cream — for sweet caffeine lovers!
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/butterscotch.jpg" class="d-block w-100" alt="Butterscotch" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Butterscotch cake drizzled with caramel and crunchy toffee bits.
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/pineapple.jpg" class="d-block w-100" alt="Pineapple Cake" />
+        <div class="card-body text-center">
+          <p class="card-text">
+            Pineapple sunshine cake with tropical fruit flavor and light cream.
+          </p>
+          <button type="button" class="btn btn-sm btn-outline-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-5 border-top">
+  <div class="container p-4">
+    <div class="row">
+      <!-- About -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Rosemary Cakes</h5>
+        <p>
+          At Rosemary Cakes, we blend the finest ingredients with love and passion to create mouthwatering treats that bring joy to every celebration.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact</h5>
+        <ul class="list-unstyled mb-0">
+          <li><i class="bi bi-envelope-fill me-2"></i> hello@rosemarycakes.com</li>
+          <li><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i> Kolkata, India</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-light border-top">
+    © 2025 Rosemary Cakes | Made with ❤️ in India
+  </div>
+</footer>
+
+{% endblock body %}

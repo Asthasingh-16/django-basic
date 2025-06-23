@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} About Us | Rosemary Cakes {% endblock title %}
+
+{% block body %}
+
+<!-- Hero Section -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">About Rosemary Cakes</h1>
+    <p class="lead text-muted mt-3">Spreading sweetness since 2010 🧁</p>
+  </div>
+</section>
+
+<!-- Who We Are -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="{% static 'about-cake.jpg' %}" alt="Baking Team" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2>Who We Are</h2>
+      <p>
+        At Rosemary Cakes, we pour love into every recipe. Based in Kolkata, our bakery started as a humble kitchen dream and quickly became a community favorite for delightful treats and celebration cakes.
+      </p>
+      <p>
+        Our cakes are baked fresh daily, using the finest ingredients — ensuring flavor, texture, and happiness in every bite.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Vision -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="{% static 'vision.jpg' %}" alt="Our Vision" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Our Vision</h2>
+        <p>
+          We believe in celebrating life’s sweetest moments — whether it's a birthday, a wedding, or a simple thank-you cake.
+        </p>
+        <p>
+          Our vision is to become your go-to bakery for every occasion, combining tradition with innovation, and always putting joy on your plate.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Core Values</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded h-100 bg-white">
+          <h4>🍰 Quality</h4>
+          <p>From ingredients to packaging, we focus on top-notch quality without compromise.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded h-100 bg-white">
+          <h4>🧁 Creativity</h4>
+          <p>We blend tradition with innovation — offering unique flavors and beautiful designs.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded h-100 bg-white">
+          <h4>💛 Integrity</h4>
+          <p>Honest baking. Transparent service. Real smiles. Always.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
